@@ -8,6 +8,11 @@ Parse cmd.exe-style command line options
 
 ⭐ Simple (4 functions only!)
 
+# What is cmd.exe-style?
+* Parameter and value looks like /PARAMETER:VALUE
+* Boolean (true/false) parameters looks like /PARAMETER
+* Help parameter looks like "/?"
+
 # Methods
 * **set(*flag*,*description*,*required*)** - sets new *flag* with *description*. It can be required or not, depending on *required* parameter.
 
