@@ -1,6 +1,9 @@
 # winargs
 Parse cmd.exe-style command line options
 
+![This is a library](https://github.com/LazataknesSoftware/LazataknesSoftware/blob/main/applicationtype-library.png)
+
+**_Note_**: This library is not available on npm (yet).
 # Features
 ⭐ Lightweight - 2.9 KB!
 
