@@ -1,0 +1,8 @@
+{
+  "name": "winargs",
+  "version": "1.0.0",
+  "description": "Node.js library for parsing cmd.exe-style command line options",
+  "main": "winargs.js",
+  "author": "Lazataknes",
+  "license": "MIT"
+}
