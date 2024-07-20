@@ -27,13 +27,13 @@ I searched library to parse command-line arguments. There's a lot, but they are 
 * Help parameter looks like `/?`
 
 # Methods
-* `set(flag,description,required)` - sets new `flag` with `description`. It can be required or not, depending on `required` parameter.
+* `set(string flag,string description,boolean required)` - sets new `flag` with `description`. It can be required or not, depending on `required` parameter.
 
   Example:
   * Command prompt: `node index.js /AGE:21`
   * *index.js*:
     ```javascript
-    let wa = require("./winargs") // If library is together with your project
+    let wa = require("winargs") // If library is together with your project
     wa.set("/AGE","Age of user",true)
     wa.parse();
     console.log(wa.get("Age"))
@@ -42,13 +42,13 @@ I searched library to parse command-line arguments. There's a lot, but they are 
  
 * `parse()` - creates dictionary from command line arguments to `get()` was able to get values of keys.
 
-* `get(key)` - get value passed to parameter. Returns `string` if queried key with value; returns `true` if queries key without value; otherwise if there is no key and no value, `get()` returns `false`
+* `get(string key)` - get value passed to parameter. Returns `string` if queried key with value; returns `true` if queries key without value; otherwise if there is no key and no value, `get()` returns `false`
 
   Example:
   * Command prompt: `node index.js /NAME:Nick`
   * *index.js*:
     ```javascript
-    let wa = require("./winargs"); // If library is together with your project
+    let wa = require("winargs"); // If library is together with your project
     wa.set("/NAME","Name of user",false);
     wa.parse();
     console.log(wa.get("name"));
@@ -61,7 +61,7 @@ I searched library to parse command-line arguments. There's a lot, but they are 
   * Command: `node index.js`
   * *index.js*:
     ```javascript
-    let wa = require("./winargs")
+    let wa = require("winargs")
     wa.set("/SAYHELLO","Greet",false)
     wa.helpWhenRun(true)
     wa.parse()
