@@ -10,6 +10,9 @@ I searched library to parse command-line arguments. There's a lot, but they are 
 
 ⭐ Simple (4 functions only!)
 
+# Installation
+`npm i git+https://github.com/LazataknesSoftware/winargs.git`
+
 # What is cmd.exe-style?
 * Parameter and value looks like `/PARAMETER:VALUE`
 * Boolean (true/false) parameters looks like `/PARAMETER`
